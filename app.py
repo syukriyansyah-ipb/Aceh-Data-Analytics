@@ -31,7 +31,7 @@ data = get_data()
 st.title("Rekapitulasi Perkara Mahkamah Syariah Kota Langsa")
 st.caption('Data dikumpulkan secara otomatis menggunakan tehnik scraping pada sumber :blue[http://sipp.pn-langsa.go.id/list_perkara/search]')
 
-st.markdown("<br/><br/>",unsafe_allow_html=True)
+st.markdown("<br/>",unsafe_allow_html=True)
 
 col1, col2 = st.columns([1,3])
 
@@ -64,12 +64,14 @@ if year_selected == []:
    if type_selected == []:
       fig = px.line(data, x="Tahun", y="Jumlah", color='Klasifikasi Perkara', text="Jumlah", symbol="Klasifikasi Perkara")
       fig.update_traces(textposition="top center")
+      fig.update_layout(legend=dict(orientation='h', y=-0.2))
       st.plotly_chart(fig, theme="streamlit", use_container_width=True)
    else:
       data_df = data[data["Klasifikasi Perkara"].isin(list(type_selected))]
 
       fig = px.line(data_df, x="Tahun", y="Jumlah", color='Klasifikasi Perkara', text="Jumlah", symbol="Klasifikasi Perkara")
       fig.update_traces(textposition="top center")
+      fig.update_layout(legend=dict(orientation='h', y=-0.2))
       st.plotly_chart(fig, theme="streamlit", use_container_width=True)
 else:
    if type_selected == []:
@@ -77,6 +79,7 @@ else:
 
       fig = px.line(data_df, x="Tahun", y="Jumlah", color='Klasifikasi Perkara', text="Jumlah", symbol="Klasifikasi Perkara")
       fig.update_traces(textposition="top center")
+      fig.update_layout(legend=dict(orientation='h', y=-0.2))
       st.plotly_chart(fig, theme="streamlit", use_container_width=True)
    else:
       data_df = data[data["Tahun"].isin(list(year_selected))]
@@ -84,4 +87,5 @@ else:
 
       fig = px.line(data_df, x="Tahun", y="Jumlah", color='Klasifikasi Perkara', text="Jumlah", symbol="Klasifikasi Perkara")
       fig.update_traces(textposition="top center")
+      fig.update_layout(legend=dict(orientation='h', y=-0.2))
       st.plotly_chart(fig, theme="streamlit", use_container_width=True)
