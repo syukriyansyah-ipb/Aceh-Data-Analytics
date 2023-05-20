@@ -6,9 +6,13 @@ st. set_page_config(
    layout="wide",
    page_title="Rekapitulasi Perkara Mahkamah Syariah Kota Langsa",
 )
+
 hide_menu_style = """
         <style>
         #MainMenu {visibility: hidden;}
+        .css-z5fcl4{
+            padding-top: 0em !important;
+        }
         </style>
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
@@ -29,7 +33,7 @@ data = get_data()
 
 
 st.title("Rekapitulasi Perkara Mahkamah Syariah Kota Langsa")
-st.caption('Data dikumpulkan secara otomatis menggunakan tehnik scraping pada sumber :blue[http://sipp.pn-langsa.go.id/list_perkara/search]')
+st.markdown('App dikembangkan oleh :blue [Dusun Cempaka Official](https://www.instagram.com/dusun_cempaka_official/) dengan menggunakan data yang dikumpulkan secara otomatis menggunakan tehnik scraping pada website :blue [Mahkamah Syariah Kota Langsa](http://sipp.pn-langsa.go.id/list_perkara/search).')
 
 st.markdown("<br/>",unsafe_allow_html=True)
 
@@ -89,3 +93,5 @@ else:
       fig.update_traces(textposition="top center")
       fig.update_layout(legend=dict(orientation='h', y=-0.2))
       st.plotly_chart(fig, theme="streamlit", use_container_width=True)
+
+st.markdown("<p style='text-align:center; margin-top:8em'>Versi 1.0.0 </p>", unsafe_allow_html=True)
