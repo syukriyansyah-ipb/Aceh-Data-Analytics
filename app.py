@@ -11,7 +11,7 @@ hide_menu_style = """
         <style>
         #MainMenu {visibility: hidden;}
         .css-z5fcl4{
-            padding-top: 0em !important;
+            padding-top: 1em !important;
         }
         </style>
         """
