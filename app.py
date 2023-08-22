@@ -33,7 +33,7 @@ data = get_data()
 
 
 st.title("Rekapitulasi Perkara Mahkamah Syariah Kota Langsa")
-st.markdown('App dikembangkan oleh :blue [syukriyansyah] (www.linkedin.com/in/syukriyansyah) dengan menggunakan data yang dikumpulkan secara otomatis menggunakan tehnik scraping pada website :blue [Mahkamah Syariah Kota Langsa](http://sipp.pn-langsa.go.id/list_perkara/search).')
+st.markdown('App dikembangkan oleh :blue [syukriyansyah] (https://www.linkedin.com/in/syukriyansyah) dengan menggunakan data yang dikumpulkan secara otomatis menggunakan tehnik scraping pada website :blue [Mahkamah Syariah Kota Langsa](http://sipp.pn-langsa.go.id/list_perkara/search).')
 
 st.markdown("<br/>",unsafe_allow_html=True)
 
@@ -94,4 +94,4 @@ else:
       fig.update_layout(legend=dict(orientation='h', y=-0.2))
       st.plotly_chart(fig, theme="streamlit", use_container_width=True)
 
-st.markdown("<p style='text-align:center; margin-top:8em'><b>LinkedIn:</b> <b>Email:</b> syukrieyansyah@gmail.com | <a href='www.linkedin.com/in/syukriyansyah'> syukriyansyah </a> | <b>Instagram:</b>  <a href='https://www.instagram.com/syukriyansyah_/'> syukriyansyah_ </a></p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align:center; margin-top:8em'><b>Email:</b> syukrieyansyah@gmail.com | <b>LinkedIn:</b> <a href='https://www.linkedin.com/in/syukriyansyah'> syukriyansyah </a> | <b>Instagram:</b>  <a href='https://www.instagram.com/syukriyansyah_/'> syukriyansyah_ </a></p>", unsafe_allow_html=True)
