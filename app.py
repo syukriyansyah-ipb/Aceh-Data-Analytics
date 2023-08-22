@@ -33,7 +33,7 @@ data = get_data()
 
 
 st.title("Rekapitulasi Perkara Mahkamah Syariah Kota Langsa")
-st.markdown('App dikembangkan oleh :blue [Dusun Cempaka Official](https://www.instagram.com/dusun_cempaka_official/) dengan menggunakan data yang dikumpulkan secara otomatis menggunakan tehnik scraping pada website :blue [Mahkamah Syariah Kota Langsa](http://sipp.pn-langsa.go.id/list_perkara/search).')
+st.markdown('App dikembangkan oleh :blue [Dusun Cempaka Official](https://www.instagram.com/syukriyansyah_/) dengan menggunakan data yang dikumpulkan secara otomatis menggunakan tehnik scraping pada website :blue [Mahkamah Syariah Kota Langsa](http://sipp.pn-langsa.go.id/list_perkara/search).')
 
 st.markdown("<br/>",unsafe_allow_html=True)
 
